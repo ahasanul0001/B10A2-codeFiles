@@ -1,0 +1,112 @@
+.habit{
+    background: rgb(7, 7, 7);
+}
+.habitContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* habit content text design */
+.habitContent{
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+}
+.habitContent>.normalText{
+    margin-top: 14px;
+    margin-bottom: 58px;
+}
+
+
+/* Habits div started & habit image */
+.habit .habits{
+    display: flex;
+    justify-content: space-around;
+}
+.habit .habits .imgBox{
+    max-width: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habit .habits .imgBox img{
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 50%;
+}
+.habit .habits .imgBox .habitName{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+.habit .habits .imgBox .normalText{
+    text-align: center;
+}
+
+/* join container */
+.habit .joinContainer{
+    width: 70%;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 55px;
+    margin: 0 auto;
+}
+.habit .joinContainer .joinContent{
+    max-width: 445px;    
+}
+.habit .joinContent .titleText{
+    max-width: 380px;
+    margin-bottom: 34px  ;
+}
+.habit .joinContent .joinBtn{
+    width: 50%;
+    margin-top: 34px;
+}
+.habit .joinContainer .joinImg{
+    background-image: url("../images/run.jpg");
+    width: 35%;
+    height: 312px;
+    background-position: center ;
+    background-position-y: -200px;
+    background-position-x: 740px;   
+    border-radius: 18px;
+}
+
+@media  screen and (max-width:576px) {
+    .habit .joinContainer{
+        width: 70%;
+        padding: 35px;
+    }
+    .habitContainer .habitContent{
+        max-width: 318px;
+    }
+    .habitContainer .habitContent>.titleText{
+        font-size: 1.8rem;
+    }
+    .joinContainer .joinContent>.titleText{
+        font-size: 1.8rem;
+        max-width: 200px;
+        margin-bottom: 14px;
+    }
+    .habitContainer .habits, .joinContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+    .habit .joinContainer .joinBtn{
+        width: 100%;
+    }
+    .habit .joinContainer .joinImg{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 170px;
+    }
+}
