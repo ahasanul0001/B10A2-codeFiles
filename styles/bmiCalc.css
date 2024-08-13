@@ -1,0 +1,151 @@
+.bmiCalc .bmiTitleContainer{
+    background: rgb(7, 7, 7);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.bmiCalc .bmiTitleContainer .bmiTitle{
+    text-align: left;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+
+.bmiCalc .bmiContent{
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* table text style*/
+.bmiCalc .bmiContent .bmiTable .tableTitle{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 55px;
+}
+.bmiTable table th{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+.bmiTable table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* table style */
+.bmiTable table,td,th{
+    border: 1px solid rgb(66, 66, 66);
+    border-collapse: collapse;
+    padding: 13px 20px;
+}
+
+/* form text style */
+.bmiForm .formTitle{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+.bmiForm .normalText{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+/* form style */
+.bmiForm .form{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 10px;
+}
+.bmiForm{
+    max-width: 577px;
+}
+
+input{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-style: none;
+    padding: 12px 0px 12px 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+#sex{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-style: none;
+    padding: 12px 20px 12px 20px;
+
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+#activity{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-style: none;
+    padding: 12px 20px 12px 20px;
+
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    grid-column: 1/3;
+}
+.bmiForm .calcBtn{
+    margin-top: 34px;
+    width: 40%;
+}
+
+
+@media screen and (max-width:576px) {
+    .bmiTitle{
+        padding: 0px 20px;
+    }
+    .bmiTitle .titleText{
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+    }
+    .bmiContent{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: left;
+        width: 90vw;
+        padding: 0px 20px;
+    }
+    .bmiForm{
+        max-width: 354px;;
+    }
+    .bmiForm .form{
+        width: 90vw;
+    }
+    .bmiForm input{
+        width: 40vw
+    }
+    .bmiForm #sex{
+        width: 45vw;
+    }
+    .bmiForm .calcBtn{
+        width: 60vw;
+    }
+    .bmiCalc .bmiContent .bmiTable .tableTitle{
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: left;
+        margin-bottom: 23px;
+    }
+    .bmiForm .formTitle{
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: left;
+    }
+}
