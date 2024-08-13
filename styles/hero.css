@@ -196,6 +196,11 @@
         line-height: 24px;
         letter-spacing: 0.4px;
     }
+    .titleText{
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
     /* common style ends */
 
     .hero{

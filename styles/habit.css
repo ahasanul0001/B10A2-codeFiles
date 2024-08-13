@@ -86,11 +86,7 @@
     .habitContainer .habitContent{
         max-width: 318px;
     }
-    .habitContainer .habitContent>.titleText{
-        font-size: 1.8rem;
-    }
     .joinContainer .joinContent>.titleText{
-        font-size: 1.8rem;
         max-width: 200px;
         margin-bottom: 14px;
     }
