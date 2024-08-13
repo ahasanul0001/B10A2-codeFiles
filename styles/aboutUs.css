@@ -1,0 +1,89 @@
+.aboutUs{
+    background: rgb(34, 34, 34);  
+}
+.footerContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    padding-bottom: 79px;
+    /* align-items: start; */
+}
+.footerTitle{
+    width: 40%;
+}
+.aboutContent{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* text style */
+.footerTitleText{
+    font-size: 70px;
+}
+.footerText{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+}
+.aboutUs .aboutTitle{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.aboutUs .aboutSubtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+/* text style ends */
+
+.footerContainer .foot hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footerContainer .foot .copyrightText{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+
+    margin-top: 36px;
+    padding-bottom: 36px;
+}
+
+/* media style */
+@media screen and (max-width:576px) {
+    /* media text style */
+
+    /* media text style ends */
+    .footerContainer{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .footerContent{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .footerTitle{
+        width: 90%;
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+    }
+    .aboutContent{
+        flex-direction: column;
+    }
+    .footerContainer .foot .copyrightText{
+        text-align: left;
+    }
+}

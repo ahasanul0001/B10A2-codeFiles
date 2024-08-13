@@ -1,0 +1,102 @@
+.challenge{
+    background: rgb(7, 7, 7);
+    padding-bottom: 80px;
+}
+.challenge .challengeContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.challenge .titleContainer{
+    width: 75%;
+    margin-left: 3%;
+}
+.challenge .titleContainer .normalText{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.challengeContent{
+    display: flex;
+    justify-content: space-around;
+}
+.challengeContent .challengeImg{
+    background-image: url('../images/challenge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 600px;
+    border-radius: 18px;
+}
+.boxDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.challengeBox{
+    background: rgb(34, 34, 34);
+    width: 30%;;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.challengeBox .boxImg1{
+    background-image: url('../images/exercise1.jpg');
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+.challengeBox .boxImg2{
+    background-image: url('../images/exercise3.png');
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+.challengeBox .boxTitle{
+    width: 80%;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.challengeBox .boxText{
+    width: 80%;
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.challengeBox a{
+    line-height: 40px;
+    color: rgb(230, 83, 60);
+    cursor: pointer;
+}
+.challengeBox a:hover{
+    color: white;
+    transition: .4s;
+}
+
+/* media for challenge section */
+@media screen and (max-width:576px) {
+    .challenge .challengeContainer{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .challenge .titleContainer{
+        width: 80vw;
+    }
+    .challengeContent{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .challengeBox, .challengeContent .challengeImg{
+        width: 100%;;
+        height: 500px;
+    }
+}
